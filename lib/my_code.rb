@@ -8,7 +8,7 @@ end
 
 def reduce(array, start=0)
   array.length.times { |index|
-    start += yield(array[index], total)
+    start += yield(array[index], start)
   }
   array
 end
