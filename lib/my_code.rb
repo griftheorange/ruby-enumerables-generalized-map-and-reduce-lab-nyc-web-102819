@@ -7,8 +7,8 @@ def map(array)
 end
 
 def reduce(array, start=0)
-  total = start
   array.length.times { |index|
     start += yield(array[index], total)
   }
+  array
 end
