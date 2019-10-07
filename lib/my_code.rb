@@ -6,7 +6,7 @@ def map(array)
   array
 end
 
-def reduce(array)
+def reduce(array, start=0)
   array.length.times { |index|
     
   }
